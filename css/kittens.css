@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: white;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    min-height: calc(100vh - 40px);
+    background: url("../img/background.jpg") repeat;
+    z-index: -2;
+}
+
+.header {
+    background-color: #507299;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.header__row {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.header__name {
+    margin-left: 13px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.sidebar {
+    float: left;
+    width: 15%;
+    background-color: #6788ae;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    float: left;
+    width: 15%;
+    min-height: 100%;
+    background-color: #6788ae;
+}
+
+.menu {
+    list-style: none;
+    padding: 43px 0px 0px 9px;
+}
+
+.menu li {
+    margin-bottom: 27px;
+}
+
+.menu li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.kittens {
+    display: block;
+    float: left;
+    width: 65%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+}
+
+.kittens__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange_kitten {
+    position: fixed;
+    width: 10%;
+    top: 70px;
+    right: 110px;
+    margin-left: 40px;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.footer .text {
+    color: #adaaab;
+}
+
+.footer_with_a_cat {
+    display: flex;
+    height: 40px;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer .footer_cat {
+    text-align: right;
+    margin-bottom: 115px;
+    margin-right: 10px;
+}
+
+.footer_cat_text {
+    margin-right: -175px;
+}
+
+.footer_without_a_cat {
+    display: none;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+

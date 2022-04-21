@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    font-family: Arial, serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #edeef0;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.content::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+a {
+    background-color: #45a3bf;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 20px 17px;
+    border-radius: 15px;
+}
